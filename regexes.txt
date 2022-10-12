@@ -1,0 +1,108 @@
+[7][8] or [7],[8]
+\w?(et al\.)? (\[\d+\]|(,*\[\d+\]))*\w?
+
+
+on, relevance feedback, graphical visualization, venues and reviewer recommendation (Küçüktunç et  al. 2012a, b, 2013c, 2015).
+(Sesagiri Raamkumar et al. 2015, 2016a; Sesagiri Raamkumar and Foo 2018)
+
+h [1,2].
+\w? \[\d+(,\d+)*\]\w?
+
+and Skiena (2010)
+et al. (2010)
+and Liu (2011b) 
+(and? \w+|et al\.?)\s?(\(\d{4}[a-z]?\)|\[\d+\]|(,*\[\d+\])|\[\d+(,\d+)*\])
+(\w+|et al\.?)\s?(\(\d{4}[a-z]?\)|\[\d+\]|(,*\[\d+\]))
+
+
+
+
+
+
+\w+? 						-> words before or after
+\(\d{4}[a-z]?\) 			-> (1955) or (1955b)
+(&|and) \w+|et al\.?)\d{4}	-> (& author | and author | et al )1955
+\[\d+\](,\s?\[\d+\])* 		-> [7],[8]
+\[\d+((,|-|–)\s?\d+)*\] 	-> [1,2]
+
+(\[\d+\](,\s?\[\d+\])*|\[\d+((,|-)\s?\d+)*\]|(&|and) \w+|et al\.?)\d{4}|\(\d{4}[a-z]?\))
+
+
+
+
+
+
+.*?\s?(\(?\d{4}[a-z]?\)?|\[\d+\](,\s?\[\d+\])*|\[\d+((,|-|–)\s?\d+)*\])
+
+
+.+?(\(?\d{4}[a-z]?\)?|\[\d+\](,\s?\[\d+\])*|\[\d+((,|-|–)\s?\d+)*\])
+
+\s?(\(?\d{4}[a-z]?\)?|\[\d+\](,\s?\[\d+\])*|\[\d+((,|-)\s?\d+)*\])\s?
+
+
+
+
+(\[\d+\](,\s?\[\d+\])*)|
+\[\d+((,|-)\s?\d+)*\]|
+(&|and) (\w+|et al\.?)\d{4}|
+\(\d{4}[a-z]?\)
+=-----------------------------------------------------------------------------------=
+
+regex = "(\[\d+\](,\s?\[\d+\])*)|
+\[\d+((,|-)\s?\d+)*\]|
+(&|and) \w+ (et al\.?\,?)\(?\d{4}[a-z]?\)?|
+\(\d{4}[a-z]?\)|
+(\d{4}[a-z])|
+\(\w+ \w* (et al\.?)?\s\d{4}[a-z]?((\,|\;) (\w+ )*\d{4}[a-z]?)*\)"
+
+------------------------------------------------
+(\[\d+\](,\s?\[\d+\])*)|(\[\d+((,|-)\s?\d+)*\])|(\(?(\w+ et al\.?\,?)* (\(?\d{4}[a-z]?\)?)\)?)|(\(\w+ \w* (et al\.?)?\s\d{4}[a-z]?((\,|\;) (\w+ )*\d{4}[a-z]?)*\))
+
+(\[\d+\](,\s?\[\d+\])*)|
+(\[\d+((,|-)\s?\d+)*\])|
+(\(?(\w+ et al\.?\,?)* (\(?\d{4}[a-z]?\)?)\)?)|
+(\(\w+ \w* (et al\.?)?\s\d{4}[a-z]?((\,|\;) (\w+ )*\d{4}[a-z]?)*\))
+
+# (\[\d+\](,\s?\[\d+\])*) 
+# [65]
+# [89], [12]
+
+(\[\d+((,|-)\s?\d+)*\])
+# [32-98]
+# [87, 56]
+
+
+# (\(?(\w+ et al\.?\,?)* (\(?\d{4}[a-z]?\)?)\)?)
+# (nye et al, 2018)
+
+# \w+ and \w+ \(\d{4}[a-z]?}\)
+#Nguyen and Verspoor (2019)
+
+# (\(\w+ \w* (et al\.?)?\s\d{4}[a-z]?((\,|\;) (\w+ )*\d{4}[a-z]?)*\))
+# (Küçüktunç et  al. 2012a, b, 2013c, 2015).
+# (Sesagiri Raamkumar et al. 2015, 2016a; Sesagiri Raamkumar and Foo 2018)
+--------------------------------------------
+\(?(\b(?!(?:months))\w+ ((et al(\.|\,)?)|(and \w+)*)*(\,?\s*\(?\d{4}[a-z]?\b\)?)\;?)+\)?
+
+
+We did not find changing the depth or size of the BiLSTMs to sig nificantly impact results (Reimers and Gurevych, 2017).
+ A and B (2005)
+ dk,dfo,zo iefohfiuz months 2005, 
+ (budd and magnuson 2010; earp 2010; fairbairn et al 2009; togia and tsigilis 2006) 
+(paludkiewicz and wohlrabe 2010; van aalst 2010) 
+(Nakagawa et al., 2010; Yessenalina et al., 2010; T¨ackstr¨om and Mc-
+Donald, 2011).
+(\(?(\w+ ((et al(\.|\,)?)|(and \w+)*)*(\,? \(?\d{4}[a-z]?\)?)\; )+\)?)
+(\(\w+ \w*\s*(et al\.?)?\s\d{4}[a-z]?((\,|\;) (\w+ )*\d{4}[a-z]?)*\))
+ (hunter and leahey 2010; stack 2004), but not by others (bozeman and gaughan 2011; sax et al 2002)
+(see archambault et al 2006; nederhof 2006; van leeuwen 2006)
+
+In addition, SCIB ERT achieves new SOTA results on BC5CDR and ChemProt (Lee et al, 2019), and EBM NLP (Nye et al, 2018).
+
+In addition, SCIB ERT achieves new SOTA results on BC5CDR and ChemProt (Lee et al. 2019), and EBM NLP (Nye et al. 2018).
+
+
+
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
